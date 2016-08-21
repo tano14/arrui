@@ -11,3 +11,12 @@ body {
 footer {
     margin: 50px 0;
 }
+
+.fixedDiv {
+    position: fixed;
+    right: 30px;
+}
+
+.centered {
+    text-align: center;
+}

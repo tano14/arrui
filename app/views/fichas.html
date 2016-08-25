@@ -1,39 +1,44 @@
-
 <!-- Page Content -->
 <div class="container">
 
     <div class="row">
 
-        <!-- Blog Entries Column -->
+        <!-- Columna de las fichas -->
         <div class="col-md-9">
 
-            <h1 class="page-header">
+            <h2 class="page-header">
                 Lista de fichas ("Número de fichas")
-            </h1>
+            </h2>
 
-            <!-- First Blog Post -->
+            <!-- Ficha -->
             <div class="well">
-                <h2>
-                    <a href="#">Blog Post Title</a>
-                </h2>
-                <p class="lead">
-                    by <a href="index.php">Start Bootstrap</a>
-                </p>
-                <p><span class="glyphicon glyphicon-time"></span> Posted on August 28, 2013 at 10:00 PM</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus
-                    inventore nisi quam quia repellat ut tempore laborum possimus eum dicta id animi corrupti debitis
-                    ipsum officiis rerum.</p>
-                <div class="hidden btnsFichas">
-                    <a class="btn btn-primary" href="#">Detalles <span
-                            class="glyphicon glyphicon-chevron-right"></span></a>
-                    <a class="btn btn-primary" href="#">Editar <span
-                            class="glyphicon glyphicon-chevron-right"></span></a>
-                    <a class="btn btn-primary" href="#">Borrar <span
-                            class="glyphicon glyphicon-chevron-right"></span></a>
+                <div class="row">
+                    <div class="pull-right">
+                        <a href="#"><i class="glyphicon glyphicon-log-out glyphiconGrande"></i></a>
+                    </div>
+                    <div class="pull-left">
+                        <h4>Nombre: </h4>
+                        <h4>Zona de recogida: </h4>
+                        <h4>Fecha de captura: </h4>
+                    </div>
                 </div>
-                <div class="centered btnVerMas">
-                    <button class="btn btn-default" onclick="verMas()">...</button>
+
+
+                <hr>
+                <div class="row">
+                    <!-- Espacio para los botones de acción de la ficha -->
+                    <div class="hidden btnsFichas">
+                        <a class="btn btn-primary" href="#">Detalles <span
+                                class="glyphicon glyphicon-chevron-right"></span></a>
+                        <a class="btn btn-primary" href="#">Editar <span
+                                class="glyphicon glyphicon-chevron-right"></span></a>
+                        <a class="btn btn-primary" href="#">Borrar <span
+                                class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                    <div class="centered btnVerMas">
+                        <button class="btn btn-default" onclick="verMas()"><i
+                                class="glyphicon glyphicon-option-horizontal"/></button>
+                    </div>
                 </div>
             </div>
 

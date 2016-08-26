@@ -5,4 +5,4 @@
 /**
  * Fichero de carga del módulo de la aplicación.
  */
-angular.module('arruiApp', ['ui.router', 'ngRoute', 'ngResource']);
+var app = angular.module('arruiApp', ['ui.router']);

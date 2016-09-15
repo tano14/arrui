@@ -14,12 +14,12 @@
             <div class="well">
                 <div class="row">
                     <div class="pull-right">
-                        <a href="#"><i class="glyphicon glyphicon-log-out glyphiconGrande"></i></a>
+                        <a ui-sref="pruebas"><i class="glyphicon glyphicon-log-out glyphiconGrande"></i></a>
                     </div>
-                    <div class="pull-left">
-                        <h4>Nombre: </h4>
-                        <h4>Zona de recogida: </h4>
-                        <h4>Fecha de captura: </h4>
+                    <div class="pull-left" ng-repeat="arrui in listaArruis">
+                        <h4>Nombre: {{arrui.name}}</h4>
+                        <h4>Zona de captura: {{arrui.zonaCaptura}}</h4>
+                        <h4>Fecha de recogida: {{arrui.fechaRecogida}}</h4>
                     </div>
                 </div>
 

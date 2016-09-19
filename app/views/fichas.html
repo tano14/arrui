@@ -7,19 +7,20 @@
         <div class="col-md-9">
 
             <h2 class="page-header">
-                Lista de fichas ("Número de fichas")
+                Lista de fichas ({{listaArruis.length}})
             </h2>
-
+        <!--    ng-repeat="arrui in listaArruis" -->
             <!-- Ficha -->
-            <div class="well">
+            <div class="well" ng-repeat="arrui in listaArruis">
                 <div class="row">
                     <div class="pull-right">
                         <a ui-sref="pruebas"><i class="glyphicon glyphicon-log-out glyphiconGrande"></i></a>
                     </div>
-                    <div class="pull-left" ng-repeat="arrui in listaArruis">
+                    <div class="pull-left">
+                        <h4>ID: {{arrui.id}}</h4>
                         <h4>Nombre: {{arrui.name}}</h4>
                         <h4>Zona de captura: {{arrui.zonaCaptura}}</h4>
-                        <h4>Fecha de recogida: {{arrui.fechaRecogida}}</h4>
+                        <h4>Fecha de recogida: {{arrui.fechaRecogida | date:'medium'}}</h4>
                     </div>
                 </div>
 
